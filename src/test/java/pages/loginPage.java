@@ -6,6 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import utils.commonMethods;
 
 public class loginPage extends commonMethods {
+
     @FindBy(id="txtUsername")
     public WebElement usernameTextField;
 

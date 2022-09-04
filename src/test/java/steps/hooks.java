@@ -1,12 +1,10 @@
 package steps;
 
-import org.junit.After;
-import org.junit.Before;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import utils.commonMethods;
 
-import static utils.commonMethods.closeBrowser;
-import static utils.commonMethods.openBrowserAndLaunchApplication;
-
-public class hooks {
+public class hooks extends commonMethods {
     @Before
     public void start(){openBrowserAndLaunchApplication();}
 

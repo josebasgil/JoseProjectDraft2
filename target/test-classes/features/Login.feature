@@ -1,7 +1,6 @@
 Feature: Login feature
-@loginFpage
+
   Scenario: Valid admin login
-    #Given user is navigated to HRMS application
-  When user enters valid admin username and password
-  And user clicks on login button
-  Then admin user is successfully logged in
+    When user enters valid admin username and password
+    And user clicks on login button
+    Then admin user is successfully logged in and see the message "Welcome Admin"

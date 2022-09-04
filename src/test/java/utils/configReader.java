@@ -9,11 +9,11 @@ public class configReader {
     static Properties prop;
 
     public static Properties readProperties (String filePath) {
-        try{
+        try {
             FileInputStream fis = new FileInputStream(filePath);
             prop = new Properties();
             prop.load(fis);
-        } catch (FileNotFoundException e){
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e){
             e.printStackTrace();
