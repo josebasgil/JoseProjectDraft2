@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import steps.pageInitializers;
 
@@ -65,6 +66,11 @@ public class commonMethods extends pageInitializers {
     public static void click(WebElement element){
         waitForClickability(element);
         element.click();
+    }
+
+    public static void selectDropdown (WebElement element, String text){
+        Select s = new Select(element);
+        s.selectByVisibleText(text);
     }
 
     public static void sendText(WebElement element, String textToSend){
